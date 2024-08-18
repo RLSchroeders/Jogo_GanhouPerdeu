@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int numeroOculto = 7; // Número fixo para a versão básica
+        int tentativa;
+
+        Console.WriteLine("Bem-vindo ao jogo Acertou: Perdeu!");
+        Console.Write("Tente adivinhar o número oculto: ");
+        tentativa = int.Parse(Console.ReadLine());
+
+        if (tentativa == numeroOculto)
+        {
+            Console.WriteLine("Parabéns! Você acertou o número!");
+        }
+        else
+        {
+            Console.WriteLine("Você errou! Fim de jogo.");
+        }
+    }
+}
